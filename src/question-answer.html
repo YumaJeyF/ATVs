@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    'title': 'Вопрос-ответ'
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        @@include('html/first-section.html')
+        @@include('html/question.html', {
+            'modifier': 'question-answer--separate'
+        })
+        @@include('html/footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

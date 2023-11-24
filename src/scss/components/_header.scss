@@ -1,0 +1,226 @@
+@use '../vars' as *;
+@use '../mixins' as *;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 12px;
+    transition: $anim-burger;
+    
+    @media (max-width: 992px) {
+        top: 0;
+    }
+    
+    &.header--visible {
+        background-color: $background-3;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0 5px;
+    @media (max-width: 1200px) {
+        gap: 20px;
+    }
+    @media (max-width: 992px) {
+        display: block;
+        margin: 9px 20px 0;
+    }
+
+    &__mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        @media (max-width: 576px) {
+            width: 70px;
+            height: 84px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__body {
+        display: flex;
+        gap: 50px;
+        margin-top: 39px;
+
+        @media (max-width: 1200px) {
+            gap: 20px;
+        }
+        @media (max-width: 992px) {
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &--visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.nav-burger {
+    @media (max-width: 992px) {
+        width: 40px;
+        height: 30px;
+        margin-left: auto;
+        position: relative;
+        cursor: pointer;
+    }
+    &__first {
+        transition: $anim-burger;
+        @media (max-width: 992px) {
+            @include burgerBtn;
+        }
+        
+        &--rotate {
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+        }
+    }
+
+    &__second {
+        transition: $anim-burger;
+        @media (max-width: 992px) {
+            @include burgerBtn;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &.nav-burger__second--rotate {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &__third {
+        transition: $anim-burger;
+        @media (max-width: 992px) {
+            @include burgerBtn;
+            bottom: 0;
+        }
+
+        &--rotate {
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+}
+
+.nav-top {
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    list-style: none;
+    font-size: $fz;
+    margin: 0;
+    @media (max-width: 1200px) {
+        gap: 27px;
+    }
+    @media (max-width: 992px) {
+        display: block;
+    }
+
+    img {
+        display: none;
+        @media (max-width: 992px) {
+            display: block;
+            margin-left: auto;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $main-color;
+        display: block;
+        @media (max-width: 992px) {
+            margin-bottom: 30px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ffffff30;
+            display: flex;
+            align-items: center;
+        }
+
+        &:hover {
+            color: $active-color;
+        }
+    }
+}
+
+.nav-phone {
+    @media (max-width: 992px) {
+        margin: 50px 0 80px;
+    }
+    span {
+        font-size: 21px;
+        color: $main-color;
+    }
+    
+    img {
+        max-width: 111px;
+        max-height: 142px;
+    }
+
+    &__number {
+        margin: 0;
+    }
+
+    &__btn {
+        @include btnHead(177px, 40px, 11px, rgba(255, 255, 255, 0.4));
+    }
+}
+
+// Button scroll to top
+
+.scroll-to-top {
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(206, 196, 196);
+    border-radius: $radius;
+    padding: 5px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+    @media (max-width: 300px) {
+        right: 10px;
+        bottom: 10px;
+    }
+    
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &--active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+}

@@ -1,0 +1,86 @@
+// Переменные 
+
+@use './vars' as *;
+
+// Миксины
+
+@use './_mixins' as *;
+
+// Расширения
+
+@use './extends';
+
+// Style for footer
+
+.bottom-menu {
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        padding: 0 50px 0 20px;
+        justify-content: center;
+        border-top: 1px solid $bl;
+        border-bottom: 1px solid $bl;
+        @media (max-width: 1133px) {
+            gap: 30px;
+        }
+        @media (max-width: 1270px) {
+            max-width: 1062px;
+            margin: auto;
+        }
+        @media (max-width: 992px) {
+            align-items: flex-start;
+        }
+        @media (max-width: 298px) {
+            gap: 15px;
+        }
+    }
+
+    &__logo {
+        max-width: 65px;
+        min-height: 83px;
+        margin: 5px 0;
+        @media (max-width: 992px) {
+            margin-top: 11px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+        margin-left: auto;
+        @media (max-width: 1133px) {
+            gap: 30px;
+        }
+        @media (max-width: 992px) {
+            display: block;
+            margin: 10px 0 10px auto;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        display: block;
+        font-size: $fz;
+        font-weight: 600;
+        color: $bl;
+        @media (max-width: 992px) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        margin: 21px 10px 24px 10px;
+        font-size: $fz;
+        color: $fc;
+        @media (max-width: 490px) {
+            font-size: 16px;
+            margin: 8px 10px 11px 10px;
+        }
+    }
+}

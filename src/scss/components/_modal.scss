@@ -1,0 +1,325 @@
+// Подключение переменных
+
+@use '../vars' as *;
+
+// Подключение миксинов
+
+@use '../mixins' as *;
+
+// Расширения
+
+@use './_extends';
+
+// Style for modal window
+
+.modal-container {
+    @include pos(fixed, 10);
+    background-color: $cl-bl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal-window {
+    max-width: 1300px;
+    height: 80%;
+    margin: 70px;
+    border-radius: $radius;
+    overflow-y: visible;
+    overflow-x: hidden;
+    background-color: $main-color;
+    position: relative;
+    @extend %modal;
+    &--active {
+        transform: none;
+    }
+    @media (max-width: 530px) {
+        margin: 35px;
+    }
+    @media (max-width: 350px) {
+        margin: 20px;
+    }
+        &__block {
+            margin-left: 111px;
+            @media (max-width: 992px) {
+                margin: 0 40px;
+            }
+            @media (max-width: 531px) {
+                margin: 0 20px;
+            }
+        }
+
+		&__inf {
+            font-size: $fz;
+            text-align: left;
+            p {
+                margin-top: 27px;
+            }
+		}
+
+		&__price {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(auto, 303px));
+            gap: 24px;
+            @media (max-width: 878px) {
+                grid-template-columns: repeat(2, minmax(auto, 303px));
+            }
+            @media (max-width: 660px) {
+                grid-template-columns: repeat(1, minmax(auto, 303px));
+            }
+		}
+
+		&__booking {
+            min-height: 465px;
+            width: 100%;
+            margin-top: 74px;
+            background: url('../img/booking-back.png'), url('../img/bumper.png'), url('../img/buggy.png'), url('../img/canister.png'), url('../img/spring.png') rgba(177, 177, 177, 0.2);;
+            background-repeat: no-repeat;
+            background-position: top left, top right 50px, right bottom, bottom right 414px, bottom left;
+            @media (max-width: 1300px) {
+                background-position: top left, top right 50px, right bottom, bottom right 50%, bottom left;
+            }
+            @media (max-width: 1100px) {
+                background-image: url('../img/booking-back.png'), url('../img/bumper.png'), url('../img/buggy.png'), url('../img/canister.png');
+                background-position: top left, top right 50px, right bottom, bottom left -9em;
+            }
+            @media (max-width: 992px) {
+                min-height: 510px;
+            }
+            @media (max-width: 800px) {
+                background-image: url('../img/booking-back.png'), url('../img/bumper.png'), url('../img/canister.png');
+                background-position: top left, top right -10em, bottom left -9em;
+            }
+            @media (max-width: 576px) {
+                background-position: top left, top right -25em, bottom left -9em;
+            }
+            @media (max-width: 420px) {
+                min-height: 550px;
+            }
+            @media (max-width: 306px) {
+                min-height: 600px;
+            }
+		}
+
+        .third-section__body {
+            margin: 47px 0 69px 0;
+        }
+        &::-webkit-scrollbar {
+            width: 0;
+        } 
+}
+
+.modal {
+    max-width: 309px;
+    min-height: 294px;
+    width: 100%;
+    border-radius: $radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: local border-box top right no-repeat url('../img/small-spring.png') $main-color;
+    margin: 0 35px;
+    position: relative;
+    @media (max-width: 301px) {
+        margin: 0 20px;
+    }
+
+    &__content {
+        margin: 0 10px;
+    }
+}
+
+.btn-close {
+    @extend %btn-close;
+
+    &--quad::before {
+        background-color: $bl;
+    }
+    &--quad::after {
+        background-color: $bl;
+    }
+    &--quad {
+        position: absolute;
+        left: 13px;
+        top: 12px;
+    }
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    &--second {
+        margin: 45px 0 45px 0;
+    }
+    @media (max-width: 992px) {
+        margin-bottom: 21px;
+    }
+}
+
+.price-inf {
+    border-radius: $radius;
+    overflow: hidden;
+    background-color: $background-4;
+    max-width: 303px;
+    cursor: pointer;
+		&__pic {
+            position: relative;
+            max-width: 303px;
+            min-height: 222px;
+		}
+
+		&__icon {
+            position: absolute;
+            z-index: 2;
+            top: 10px;
+            left: 10px;
+		}
+
+		&__img { 
+            @include pos(absolute, 0);
+            object-fit: cover;
+		}
+
+		&__name {
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: $fz;
+		}
+
+		&__price {
+            margin: 3px 0px 9px 0;
+            text-align: center;
+            font-size: 20px;
+            color: $active-color;
+            font-weight: 700;
+		}
+}
+
+.booking-modal {
+    position: relative;
+    top: 55px;
+    margin-left: 111px;
+    @media (max-width: 992px) {
+        margin:  0 40px;
+        top: 30px;
+    }
+    @media (max-width: 531px) {
+        margin: 0 20px;
+    }
+		
+}
+
+.frm {
+    display: grid;
+    grid-template-columns: repeat(2, 356px);
+    gap: 10px 20px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 992px) {
+        display: block;
+    }
+}
+
+.frm-inf {
+		&__field {
+            font-size: $fz;
+            border: 0.5px solid #787878;
+            background-color: $main-color;
+            border-radius: $radius;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            min-height: 46px;
+            margin-top: 11px;
+            &--change {
+                justify-content: center;
+            }
+            &--error {
+                border: 1px solid reg;
+                background-color: rgb(236, 170, 170);
+            }
+            @media (max-width: 992px) {
+                max-width: 100%;
+                margin-bottom: 9px;
+                &:nth-child(4) {
+                    margin-bottom: 0;
+                }
+            }
+		}
+
+		&__icon {
+            margin-left: 10px;
+		}
+        
+        &__input {
+            padding: 0 5px;
+            width: 100%;
+            height: 100%;
+            font-size: $fz;
+            border: none;
+            outline: none;
+
+            &[type='date'] {
+                flex-direction: row-reverse;
+                box-sizing: border-box;
+                position: absolute;
+                gap: 20px;
+                padding-left: 10px;
+                font-size: 20px;
+                opacity: 0;
+            }
+
+            &[type=number] {
+                width: 78px;
+                min-height: 30px;
+                border: 0.5px solid $active-color;
+                text-align: center;
+                border-radius: $radius;
+            }
+            
+            &--error {
+                background-color: rgb(236, 170, 170);
+            }
+        }
+
+        label {
+            font-size: $fz;
+            margin-bottom: 11px;
+        }
+
+        &__btn-next,
+        &__btn-prev {
+            border: 0.5px solid $active-color;
+            border-radius: $radius;
+            width: 30px;
+            height: 30px;
+            font-size: 24px;
+            background: none;
+            cursor: pointer;
+        }
+}
+
+.frm-sub {
+    @include btnMain(none, $active-color, $main-color);
+    margin-top: 32px;
+    @media (max-width: 992px) {
+        margin-top: 16px;
+    }
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}

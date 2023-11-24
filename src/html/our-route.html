@@ -1,0 +1,600 @@
+<section class="third-section">
+    <div class="title">Наши маршруты</div>
+    @@include('slider-main-first.html', {
+        'style': '',
+        'name': 'Забронировать',
+        'mod': '',
+        'modSlider': '',
+        'more': 'Подробнее'
+    })
+    <div class="modal-container" id="modal-1" data-main-container="true">
+        <button class="btn-close"></button>
+        <div class="modal-window">
+            <div class="modal-window__body">
+                @@include('slider-main-first.html', {
+                    'style': 'style="display: none"',
+                    'name': '',
+                    'mod': 'inf-way__inf--active',
+                    'modSlider': 'third-section__slider--active',
+                    'more': 'Схема маршрута'
+                })
+                <div class="modal-window__block">
+                    <div class="modal-title">Что посмотрим на маршруте:</div>
+                    <div class="modal-window__inf">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit inventore expedita iure placeat, nesciunt incidunt. Libero natus rem doloribus cum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est deserunt voluptatem eveniet sequi a veniam laboriosam, voluptas delectus quia voluptatum autem impedit esse eos aliquid minus, eius quidem nam vel dolorum? Reiciendis libero temporibus rem consectetur quae accusamus totam. Corrupti, rem. Saepe corrupti obcaecati, blanditiis esse eaque fugiat veniam, non, voluptatem quae voluptatum temporibus earum ex dolor ullam error.</p>
+                    </div>
+                    <div class="modal-title modal-title--second">Стоимость экскурсии за 1 квадроцикл</div>
+                    <div class="modal-window__price">
+                        <div class="price-inf" data-modal="#quad-1">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad1.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-1" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-2">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad2.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">CFORCE 1000 EPS (X10 EPS)</p>
+                            <p class="price-inf__price">6000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-2" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-3">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad3.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">CFMOTO CFORCE 600 EPS</p>
+                            <p class="price-inf__price">7000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-3" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-4">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad4.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">ZFORCE 1000</p>
+                            <p class="price-inf__price">9000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-4" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-5">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad5.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-5" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="price-inf" data-modal="#quad-6">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad1.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-6" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-window__booking">
+                        <div class="booking-modal">
+                            <div class="modal-title">Бронирование онлайн</div>
+                            <form class="frm">
+                                <div class="frm-inf">
+                                    <label for="now-date">Желаемая дата</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/date.svg" alt="icon" class="frm-inf__icon frm-inf__icon--date">
+                                        <input type="date" name="date" id="now-date" class="frm-inf__input">
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="number-man">Количество человек</label>
+                                    <div class="frm-inf__field frm-inf__field--change">
+                                        <button class="frm-inf__btn-next" type="button" data-change="#number-man-1" onclick="this.nextElementSibling.stepDown();">-</button>
+                                        <input type="number" name="number" id="number-man-1" class="frm-inf__input frm-inf__input--number" value="1" min="1">
+                                        <button class="frm-inf__btn-prev" type="button" data-change="#number-man-1" onclick="this.previousElementSibling.stepUp();">+</button>
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="your-tel">Телефон или WhatsApp</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/icon-phone.svg" alt="icon" class="frm-inf__icon">
+                                        <input type="tel" name="phone" id="your-tel" class="frm-inf__input">
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="your-name">Как к вам обращаться?</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/user.svg" alt="icon" class="frm-inf__icon">
+                                        <input type="text" name="phone" id="your-name" class="frm-inf__input">
+                                    </div> 
+                                </div>
+                                <button class="frm-sub" type="submit">Забронировать</button>
+                            </form> 
+                        </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    @@include('slider-main-second.html', {
+        'style': '',
+        'name': 'Забронировать',
+        'mod': '',
+        'modSlider': '',
+        'more': 'Подробнее'
+    })
+    <div class="modal-container" id="modal-2" data-main-container="true">
+        <button class="btn-close"></button>
+        <div class="modal-window">
+            <div class="modal-window__body">
+                @@include('slider-main-second.html', {
+                    'style': 'style="display: none"',
+                    'name': '',
+                    'mod': 'inf-way__inf--active',
+                    'modSlider': 'third-section__slider--active',
+                    'more': 'Схема маршрута'
+                })
+                <div class="modal-window__block">
+                    <div class="modal-title">Что посмотрим на маршруте:</div>
+                    <div class="modal-window__inf">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit inventore expedita iure placeat, nesciunt incidunt. Libero natus rem doloribus cum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est deserunt voluptatem eveniet sequi a veniam laboriosam, voluptas delectus quia voluptatum autem impedit esse eos aliquid minus, eius quidem nam vel dolorum? Reiciendis libero temporibus rem consectetur quae accusamus totam. Corrupti, rem. Saepe corrupti obcaecati, blanditiis esse eaque fugiat veniam, non, voluptatem quae voluptatum temporibus earum ex dolor ullam error.</p>
+                    </div>
+                    <div class="modal-title modal-title--second">Стоимость экскурсии за 1 квадроцикл</div>
+                    <div class="modal-window__price">
+                        <div class="price-inf" data-modal="#quad-7">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad1.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-7" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-8">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad2.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">CFORCE 1000 EPS (X10 EPS)</p>
+                            <p class="price-inf__price">6000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-8" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-9">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad3.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">CFMOTO CFORCE 600 EPS</p>
+                            <p class="price-inf__price">7000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-9" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-10">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad4.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">ZFORCE 1000</p>
+                            <p class="price-inf__price">9000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-10" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-11">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad5.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-11" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="price-inf" data-modal="#quad-12">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad1.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-12" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-window__booking">
+                        <div class="booking-modal">
+                            <div class="modal-title">Бронирование онлайн</div>
+                            <form class="frm">
+                                <div class="frm-inf">
+                                    <label for="now-date">Желаемая дата</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/date.svg" alt="icon" class="frm-inf__icon frm-inf__icon--date">
+                                        <input type="date" name="date" id="now-date" class="frm-inf__input">
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="number-man">Количество человек</label>
+                                    <div class="frm-inf__field frm-inf__field--change">
+                                        <button class="frm-inf__btn-next" type="button" data-change="#number-man-2" onclick="this.nextElementSibling.stepDown();">-</button>
+                                        <input type="number" name="number" id="number-man-2" class="frm-inf__input frm-inf__input--number" value="1" min="1">
+                                        <button class="frm-inf__btn-prev" type="button" data-change="#number-man-2" onclick="this.previousElementSibling.stepUp();">+</button>
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="your-tel">Телефон или WhatsApp</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/icon-phone.svg" alt="icon" class="frm-inf__icon">
+                                        <input type="tel" name="phone" id="your-tel" class="frm-inf__input">
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="your-name">Как к вам обращаться?</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/user.svg" alt="icon" class="frm-inf__icon">
+                                        <input type="text" name="phone" id="your-name" class="frm-inf__input">
+                                    </div> 
+                                </div>
+                                <button class="frm-sub" type="submit">Забронировать</button>
+                            </form> 
+                        </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    @@include('slider-main-third.html', {
+        'style': '',
+        'name': 'Забронировать',
+        'mod': '',
+        'modSlider': '',
+        'more': 'Подробнее'
+    })
+    <div class="modal-container" id="modal-3" data-main-container="true">
+        <button class="btn-close"></button>
+        <div class="modal-window">
+            <div class="modal-window__body">
+                @@include('slider-main-third.html', {
+                    'style': 'style="display: none"',
+                    'name': '',
+                    'mod': 'inf-way__inf--active',
+                    'modSlider': 'third-section__slider--active',
+                    'more': 'Схема маршрута'
+                })
+                <div class="modal-window__block">
+                    <div class="modal-title">Что посмотрим на маршруте:</div>
+                    <div class="modal-window__inf">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit inventore expedita iure placeat, nesciunt incidunt. Libero natus rem doloribus cum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est deserunt voluptatem eveniet sequi a veniam laboriosam, voluptas delectus quia voluptatum autem impedit esse eos aliquid minus, eius quidem nam vel dolorum? Reiciendis libero temporibus rem consectetur quae accusamus totam. Corrupti, rem. Saepe corrupti obcaecati, blanditiis esse eaque fugiat veniam, non, voluptatem quae voluptatum temporibus earum ex dolor ullam error.</p>
+                    </div>
+                    <div class="modal-title modal-title--second">Стоимость экскурсии за 1 квадроцикл</div>
+                    <div class="modal-window__price">
+                        <div class="price-inf" data-modal="#quad-13">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad1.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-13" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-14">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad2.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">CFORCE 1000 EPS (X10 EPS)</p>
+                            <p class="price-inf__price">6000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-14" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-15">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad3.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">CFMOTO CFORCE 600 EPS</p>
+                            <p class="price-inf__price">7000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-15" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-16">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad4.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">ZFORCE 1000</p>
+                            <p class="price-inf__price">9000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-16" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-inf" data-modal="#quad-17">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad5.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-17" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="price-inf" data-modal="#quad-18">
+                            <div class="price-inf__pic">
+                                <img src="@img/icon-quad.svg" alt="icon" class="price-inf__icon">
+                                <img src="@img/quad1.png" alt="quad bike" class="price-inf__img">
+                            </div>
+                            <p class="price-inf__name">UFORCE 1000 EPS (U10 EPS)</p>
+                            <p class="price-inf__price">4000 ₽</p>
+                        </div>
+                        <div class="modal-container" id="quad-18" data-quad="true">
+                            <div class="modal">
+                                <div class="btn-close btn-close--quad"></div>
+                                <div class="modal__content">
+                                    <h2 class="title-sec title-sec--change">
+                                        <span class="title-sec--small">Мощность: </span>72 л.с.
+                                    </h2>
+                                    <h2 class="title-sec">
+                                        <span class="title-sec--small">Двигатель: </span>1000 см3
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-window__booking">
+                        <div class="booking-modal">
+                            <div class="modal-title">Бронирование онлайн</div>
+                            <form class="frm">
+                                <div class="frm-inf">
+                                    <label for="now-date">Желаемая дата</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/date.svg" alt="icon" class="frm-inf__icon frm-inf__icon--date">
+                                        <input type="date" name="date" id="now-date" class="frm-inf__input">
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="number-man">Количество человек</label>
+                                    <div class="frm-inf__field frm-inf__field--change">
+                                        <button class="frm-inf__btn-next" type="button" data-change="#number-man-3" onclick="this.nextElementSibling.stepDown();">-</button>
+                                        <input type="number" name="number" id="number-man-3" class="frm-inf__input frm-inf__input--number" value="1" min="1">
+                                        <button class="frm-inf__btn-prev" type="button" data-change="#number-man-3" onclick="this.previousElementSibling.stepUp();">+</button>
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="your-tel">Телефон или WhatsApp</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/icon-phone.svg" alt="icon" class="frm-inf__icon">
+                                        <input type="tel" name="phone" id="your-tel" class="frm-inf__input">
+                                    </div>
+                                </div>
+                                <div class="frm-inf">
+                                    <label for="your-name">Как к вам обращаться?</label>
+                                    <div class="frm-inf__field">
+                                        <img src="@img/user.svg" alt="icon" class="frm-inf__icon">
+                                        <input type="text" name="phone" id="your-name" class="frm-inf__input">
+                                    </div> 
+                                </div>
+                                <button class="frm-sub" type="submit">Забронировать</button>
+                            </form> 
+                        </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>

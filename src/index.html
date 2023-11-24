@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    'title': 'Главная'
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        @@include('html/first-section.html')
+        <section class="second-section">
+            <div class="second-section__body">
+                <div class="second-section__inf">
+                    <div class="block-inf">
+                        <div class="block-inf__circle">
+                            <img src="@img/tree.svg" alt="tree" class="block-inf__icon">
+                        </div>
+                        <h3 class="block-inf__title">Увлекательные экскурсии</h3>
+                        <p class="block-inf__text">Маршруты от лесных дорожек до полного бездорожья!</p>
+                    </div>
+                </div>
+                <div class="second-section__inf">
+                    <div class="block-inf">
+                        <div class="block-inf__circle">
+                            <img src="@img/bike.svg" alt="bike" class="block-inf__icon">
+                        </div>
+                        <h3 class="block-inf__title">Надёжная техника</h3>
+                        <p class="block-inf__text">18 квадроциклов всех японских брендов</p>
+                    </div>
+                </div>
+                <div class="second-section__inf">
+                    <div class="block-inf">
+                        <div class="block-inf__circle">
+                            <img src="@img/helmet.svg " alt="helmet" class="block-inf__icon">
+                        </div>
+                        <h3 class="block-inf__title">Экипировка бесплатно</h3>
+                        <p class="block-inf__text">Необходимая экипировка выдаётся бесплатно</p>
+                    </div>
+                </div>
+                <div class="second-section__inf">
+                    <div class="block-inf">
+                        <div class="block-inf__circle">
+                            <img src="@img/instructor.svg " alt="instructor" class="block-inf__icon">
+                        </div>
+                        <h3 class="block-inf__title">Опытные инструктора</h3>
+                        <p class="block-inf__text">Обеспечат полную безопасность вашего отдыха</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('html/our-route.html')
+        <section class="fourth-section">
+            <div class="fourth-section__body">
+                <div class="fourth-section__inf">
+                    <div class="test">
+                        <div class="text__title title">Затрудняетесь выбрать маршрут?</div>
+                        <p class="text__inf">Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию</p>
+                        <button class="test__btn">Начать тест</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifth-section">
+            <div class="fifth-section__body">
+                <div class="title">Фото</div>
+                <div class="fifth-section__slider">
+                    <div class="swiper swiper-galery">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide1.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="swiper-galery__pic">
+                                    <img src="@img/slide2.png" alt="" class="swiper-galery__img">
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="swiper-galery__pic">
+                                    <img src="@img/slide3.png" alt="" class="swiper-galery__img">
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="swiper-galery__pic">
+                                    <img src="@img/slide4.png" alt="" class="swiper-galery__img">
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="swiper-galery__pic">
+                                    <img src="@img/slide5.png" alt="" class="swiper-galery__img">
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="swiper-galery__pic">
+                                    <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div>
+                           <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div> 
+                          <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div>
+                           <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper-galery__pic">
+                                <img src="@img/slide6.png" alt="" class="swiper-galery__img">
+                            </div>
+                          </div> 
+                        </div>
+                        <div class="pagination pagination--change">
+                            <div class="pag pag--change"></div>
+                            <div class="scroll">scroll</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sixth-section">
+            <div class="sixth-section__body">
+                <div class="video">
+                    <div class="video__content">
+                        <h2 class="video__name">Название видео</h2>
+                        <img src="@img/btn-play-video.svg" alt="icon play video" class="video__icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seventh-section">
+            <div class="seventh-section__body">
+                <div class="title">Наша команда</div>
+                <div class="team">
+                    <div class="team__inf">
+                        <div class="team__back">
+                            <img src="@img/man1.png" alt="icon man" class="team__img">
+                        </div>
+                        <div class="team__inf-man">
+                            <div class="title-text">Юлиана</div>
+                            <span class="team__description">руководитель</span>
+                        </div>
+                    </div>
+                    <div class="team__inf">
+                        <div class="team__back">
+                            <img src="@img/man2.png" alt="icon man" class="team__img">
+                        </div>
+                        <div class="team__inf-man">
+                            <div class="title-text">Максим</div>
+                            <span class="team__description">старший инструктор</span>
+                        </div>
+                    </div>
+                    <div class="team__inf">
+                        <div class="team__back">
+                            <img src="@img/man3.png" alt="icon man" class="team__img">
+                        </div>
+                        <div class="team__inf-man">
+                            <div class="title-text">Кристина</div>
+                            <span class="team__description">администратор</span>
+                        </div>
+                    </div>
+                    <div class="team__inf">
+                        <div class="team__back">
+                            <img src="@img/man4.png" alt="icon man" class="team__img">
+                        </div>
+                        <div class="team__inf-man">
+                            <div class="title-text">Юрий</div>
+                            <span class="team__description">старший механик</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('html/terms-of-service.html')
+        @@include('html/offer.html')
+        <section class="tenth-section">
+            <div class="tenth-section__body">
+                <div class="title">Подарочный сертификат</div>
+                <h2 class="tenth-section__title-inf">
+                    Хотите сделать оригинальный подарок? 
+                    Подарите незабываемые эмоции - лучший подарок!
+                </h2>
+                <div class="certificate">
+                    <div class="certificate-right">
+                        <div class="certificate-right__body">
+                            <h1 class="certificate-right__title">СЕРТИФИКАТ</h1>
+                            <img src="@img/header-logo.png" class="certificate-right__logo">
+                            <div class="certificate-right__text">
+                                <div class="title-text">Катание на квадроциклах</div>
+                                <div class="certificate-right__route">
+                                    Маршрут: Лесная прогулка
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate-left">
+                        <p class="certificate-left__text">
+                            Хотите удивить своих близких оригинальным подарком? Подарочный сертификат на экскурсию на квадроциклах станет не просто интересным подарком, но и реальной возможностью приблизить Ваших друзей и близких к новому увлечению.
+                        </p>
+                        <button class="certificate-left__btn">Подберём сертификат для вас</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="eleventh-section">
+            <div class="eleventh-section__body">
+                @@include('html/question.html')
+                <div class="title title--second">Дополнительные услуги</div>
+                <div class="services">
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services1.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Эвакуация, ремонт квадроциклов
+                        </div>
+                    </div>
+
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services2.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Фото, видеосъемка
+                        </div>
+                    </div>
+
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services3.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Транспортировка техники
+                        </div>
+                    </div>
+
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services4.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Заправка, чекап, мойка
+                        </div>
+                    </div>
+
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services5.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Корпоративы, тимбилдинги
+                        </div>
+                    </div>
+
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services6.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Выездной кейтеринг
+                        </div>
+                    </div>
+
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services7.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Индивидуальные маршруты
+                        </div>
+                    </div>
+
+                    <div class="services__inf">
+                        <div class="services__pic">
+                            <img src="@img/services8.png" alt="repair" class="services__img">
+                        </div>
+                        <div class="services__text">
+                            Услуги гида
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('html/our-contacts.html')
+        @@include('html/footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

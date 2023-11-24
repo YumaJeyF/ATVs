@@ -1,0 +1,67 @@
+@use './vars' as *;
+
+@mixin btnHead($w, $h, $mt, $back) {
+    width: $w;
+    height: $h;
+    border: none;
+    border-radius: $radius;
+    font-size: $fz;
+    color: $main-color;
+    margin-top: $mt;
+    background: $back;
+    cursor: pointer;
+}
+
+@mixin burgerBtn() {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $main-color;
+}
+
+@mixin picture() {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@mixin scrollLine($back-color) {
+    width: 54px;
+    height: 1px;
+    background-color: $back-color;
+    font-size: 18px;
+}
+
+@mixin btnMain($br, $bc, $cl) {
+    border: $br;
+    background-color: $bc;
+    cursor: pointer;
+    width: 175px;
+    height: 45px;
+    border-radius: $radius;
+    font-size: $fz;
+    font-weight: 600;
+    color: $cl;
+}
+
+@mixin pos($p, $z) {
+    position: $p;
+    z-index: $z;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+@mixin lineBtnClose($deg) {
+    height: 30px;
+    width: 2px;
+    background-color: $main-color;
+    position: absolute;
+    top: 0;
+    transform: rotate($deg);
+}

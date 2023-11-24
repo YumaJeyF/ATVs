@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    'title': 'Галерея'
+})
+<body>
+    <div class="container">
+        @@include('html/header.html')
+        @@include('html/first-section.html')
+        <div class="galery">
+            <div class="title">Галерея</div>
+            <div class="galery__content">
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/1slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/2slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/3slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/4slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/5slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/6slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/7slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/8slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/9slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/10slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/11slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/12slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/13slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/14slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/15slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/16slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/17slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/18slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/19slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery__pic">
+                    <div class="galery__back"></div>
+                    <span class="galery__text">Увеличить</span>
+                    <img src="@img/20slide.png" alt="picture" class="galery__img">
+                </div>
+                <div class="galery-container">
+                    <button class="galery-container__btn-close" data-btn="close"></button>
+                    <div class="galery-container__btns">
+                        <div class="swiper-button-prev" data-btn="prev">
+                            <img src="@img/arrow-left-galery.svg" class="galery-container__btn-prev" data-btn="prev">
+                        </div>
+                        <div class="swiper-button-next" data-btn="next" >
+                            <img src="@img/arrow-right-galery.svg" class="galery-container__btn-next" data-btn="next"> 
+                        </div>
+                    </div>
+                    <div class="swiper galery-container__window">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="@img/1slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/2slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/3slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/4slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/5slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/6slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/7slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/8slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/9slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/10slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/11slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/12slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/13slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/14slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/15slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/16slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/17slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/18slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/19slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="@img/20slide.png" alt="picture" class="galery__img" loading="lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('html/footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
